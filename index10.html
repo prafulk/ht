@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning jQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+        #square{
+        
+        		height : 200px;
+        		width : 200px;
+        		background-color:grey;
+        
+        		}
+        		
+        #target{
+        		height : 300px;
+        		width : 300px;
+        		background-color:yellow;
+        
+        
+        		}
+        		
+         #resizable{
+        
+        		height : 200px;
+        		width : 200px;
+        		background-color:red;
+        
+        		}
+    	
+  
+    </style>   
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+
+    <script type = "text/javascript" src= "http://code.jquery.com/jquery.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    </script> 
+</head>
+
+<body>
+<h1>jQueryUI</h1>
+
+<div id = "square">
+<p>Move me around</p>
+</div>
+
+<div id = "resizable"></div>
+<div id = "target"></div>
+
+<script>
+
+$("#square").draggable();
+$("#resizable").resizable();
+$("#target").droppable(
+{ 
+	drop : function(ui, event){
+	
+	$("#target").css("background-color","blue");
+	
+	}
+	
+
+}
+);
+
+</script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning jQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+    		
+    
+  
+    </style>   
+    
+    <script type = "text/javascript" src= "http://code.jquery.com/jquery.min.js" >
+    
+    
+    </script> 
+</head>
+
+<body>
+<h1> Asyncronous Javascript and XML</h1>
+
+<script>
+//  $.get("text.html" , function(data)
+//   {alert(data);}
+//      );
+
+
+$.ajax({
+		url:"text.html"
+		}).done(function(data){
+		
+					$("h1").html(data);
+					
+								}
+				);
+
+</script>
+    
+
+</body>
+</html>

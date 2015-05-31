@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning jQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+    		
+    
+  
+    </style>   
+    
+    <script type = "text/javascript" src= "jquery.min.js">
+    
+    
+    </script> 
+</head>
+
+<body>
+<p>This text is going to fade away</p>
+<button id = "fadeout">Click me<button>
+<button id = "fadein">Click me<button>
+
+<script>
+
+$("#fadeout").click(function(){
+
+$("p").fadeOut(50);
+
+}
+);
+
+$("#fadein").click(function(){
+
+$("p").fadeIn("slow");
+
+}
+
+);
+</script>
+    
+
+</body>
+</html>
